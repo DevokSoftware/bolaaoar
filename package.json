@@ -1,6 +1,7 @@
 {
   "name": "bolaaoar",
   "version": "0.1.0",
+  "proxy": "http://localhost:3001",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.3.6",
@@ -13,7 +14,11 @@
     "@types/node": "^12.20.55",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "framer-motion": "^6.5.1",
+    "nba": "^4.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^3.11.0",
