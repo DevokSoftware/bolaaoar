@@ -34,11 +34,11 @@ function App() {
     new Team("1610612744", "Golden State Warriors", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.GSW, 2),
     new Team("1610612745", "Houston Rockets", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.HOU, 14),
     new Team("1610612754", "Indiana Pacers", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.IND, 14),
-    new Team("1", "Los Angeles Clippers", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.LAC, 4),
+    new Team("1610612746", "Los Angeles Clippers", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.LAC, 4),
     new Team("1610612747", "Los Angeles Lakers", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.LAL, 9),
     new Team("1610612763", "Memphis Grizzlies", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.MEM, 7),
     new Team("1610612748", "Miami Heat", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.MIA, 4),
-    new Team("2", "Milwaukee Bucks", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.MIL, 1),
+    new Team("1610612749", "Milwaukee Bucks", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.MIL, 1),
     new Team("1610612750", "Minnesota Timberwolves", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.MIN, 5),
     new Team("1610612740", "New Orleans Pelicans", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.NOP, 6),
     new Team("1610612752", "New York Knicks", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.NYK, 9),
@@ -93,7 +93,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <SimpleGrid minChildWidth='120px' spacing='60px' >
         <TableContainer maxWidth='400px' w='90%' m='auto' mt='3vh'>
-          <Table size='md'>
+          <Table size='lg'>
             <Thead>
               <Tr>
                 <Th></Th>
