@@ -12,7 +12,7 @@ app.listen(PORT, () => {
 
 app.get("/stats", async (req, res) => {
     console.log('Requesting stats...')
-    let stats =
-        await NBA.stats.teamStats({ Season: '2022-23' });
+    let stats = await NBA.stats.teamStats({ Season: '2022-23' });
+    console.log('Sending stats...')
     res.send(stats)
 });

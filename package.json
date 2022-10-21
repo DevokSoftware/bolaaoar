@@ -1,7 +1,7 @@
 {
   "name": "bolaaoar",
   "version": "0.1.0",
-  "proxy": "http://localhost:3001",
+  "proxy": "https://bolaaoar.onrender.com/",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.3.6",
