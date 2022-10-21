@@ -29,8 +29,8 @@
   "scripts": {
     "server": "node server/index.js",
     "client": "react-scripts start",
-    "build-project": "react-scripts build",
-    "build": "concurrently \"npm run build-project\" \"npm run server\"",
+    "build": "react-scripts build",
+    "build-project": "concurrently \"npm run build-project\" \"npm run server\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
