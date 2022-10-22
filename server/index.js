@@ -1,5 +1,5 @@
 const express = require("express");
-const NBA = require("nba");
+const NBA = require("../nba-master");
 const cors = require('cors');
 
 const PORT = process.env.PORT || 3001;
@@ -10,9 +10,10 @@ app.listen(PORT, () => {
     console.log('Listening on port ' + PORT)
 });
 
-app.get("/stats", async (req, res) => {
+app.get('/stats', async (req, res) => {
     console.log('Requesting stats...')
-    let stats = await NBA.stats.teamStats({ Season: '2022-23' });
-    console.log('Sending stats...')
-    res.send(stats)
-});
+    NBA.stats.teamStats({ Season: '2022-23' }).then(x => {
+        console.log("Sending stats...")
+        res.send(x)
+    });
+})
