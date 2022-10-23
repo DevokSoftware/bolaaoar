@@ -3,7 +3,6 @@ import {
   ChakraProvider,
   Box,
   Text,
-  theme,
   SimpleGrid,
   TableContainer,
   Table,
@@ -12,6 +11,9 @@ import {
   Th,
   Tbody,
   Td,
+  extendTheme,
+  type ThemeConfig,
+  ColorModeScript
 } from "@chakra-ui/react"
 
 import { Team } from "./model/Team";
@@ -19,6 +21,7 @@ import *  as NBAIcons from "./logos/index.js";
 import { PersonEnum } from "./model/PersonEnum";
 import { ConferenceEnum } from "./model/ConferenceEnum";
 import { PersonScore } from "./model/PersonScore";
+import theme from "./theme";
 
 function App() {
   const teams = [
