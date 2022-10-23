@@ -80,15 +80,13 @@ function App() {
   }
 
   React.useEffect(() => {
+    setTeamsList(teams)
+    populateScoreBoard()
     fetch("/stats")
       .then((res) => {
         res.json().then(mapTeams)
       })
   }, []);
-
-  if (isLoading) {
-    return <></>;
-  }
   return (
     <ChakraProvider theme={theme}>
       <SimpleGrid minChildWidth='120px' spacing='60px' >
