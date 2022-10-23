@@ -28,7 +28,7 @@ function App() {
     new Team("1610612737", "Atlanta Hawks", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.ATL, 7),
     new Team("1610612738", "Boston Celtics", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.BOS, 3),
     new Team("1610612751", "Brooklyn Nets", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.BKN, 6),
-    new Team("1610612766", "Charlotte Hornets", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.CHA, 15),
+    new Team("1610612766", "Charlotte Hornets", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.CHA, 15),
     new Team("1610612741", "Chicago Bulls", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.CHI, 10),
     new Team("1610612739", "Cleveland Cavaliers", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.CLE, 2),
     new Team("1610612742", "Dallas Mavericks", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.DAL, 8),
@@ -45,7 +45,7 @@ function App() {
     new Team("1610612750", "Minnesota Timberwolves", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.MIN, 5),
     new Team("1610612740", "New Orleans Pelicans", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.NOP, 6),
     new Team("1610612752", "New York Knicks", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.NYK, 9),
-    new Team("1610612760", "Oklahoma City Thunder", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.OKC, 15),
+    new Team("1610612760", "Oklahoma City Thunder", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.OKC, 15),
     new Team("1610612753", "Orlando Magic", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.ORL, 13),
     new Team("1610612755", "Philadelphia 76ers", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.PHI, 5),
     new Team("1610612756", "Phoenix Suns", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.PHX, 1),
@@ -57,12 +57,12 @@ function App() {
     new Team("1610612762", "Utah Jazz", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.UTA, 12),
   ]
 
-  const [isLoading, setLoading] = React.useState(true);
   const [personScoreboard, setPersonScoreboard] = React.useState<PersonScore[]>([]);
   const [teamsList, setTeamsList] = React.useState<Team[]>([]);
+  const [lastUpdate, setLastUpdate] = React.useState<string>("");
 
-  function mapTeams(scoreboardArray: any) {
-    for (let scoreboard of scoreboardArray) {
+  function mapTeams(scoreboardResponse: any) {
+    for (let scoreboard of scoreboardResponse.standings) {
       for (let team of teams) {
         if (team.id == scoreboard.teamId) {
           team.wins = scoreboard.w
@@ -71,6 +71,7 @@ function App() {
       }
     }
     setTeamsList(teams)
+    setLastUpdate(scoreboardResponse.lastUpdate)
     populateScoreBoard()
   }
 
@@ -79,13 +80,12 @@ function App() {
     let ln: PersonScore = new PersonScore(PersonEnum.LN, teams.filter(item => item.chosenBy === PersonEnum.LN).map(item => item.wins).reduce((prev, next) => prev + next));
     let jd: PersonScore = new PersonScore(PersonEnum.JD, teams.filter(item => item.chosenBy === PersonEnum.JD).map(item => item.wins).reduce((prev, next) => prev + next));
     setPersonScoreboard([rbr, ln, jd]);
-    setLoading(false);
   }
 
   React.useEffect(() => {
     setTeamsList(teams)
     populateScoreBoard()
-    fetch("/stats")
+    fetch("/standings")
       .then((res) => {
         res.json().then(mapTeams)
       })
@@ -176,7 +176,9 @@ function App() {
           </TableContainer>
         </Box>
       </SimpleGrid>
-
+      <SimpleGrid minChildWidth='120px' spacing='60px' m='4vh' >
+        <Text color='gray.400' fontSize='xs'>Última Atualização: {lastUpdate}</Text>
+      </SimpleGrid>
     </ChakraProvider >
   );
 }
