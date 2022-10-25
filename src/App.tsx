@@ -11,9 +11,6 @@ import {
   Th,
   Tbody,
   Td,
-  extendTheme,
-  type ThemeConfig,
-  ColorModeScript
 } from "@chakra-ui/react"
 
 import { Team } from "./model/Team";
@@ -25,36 +22,36 @@ import theme from "./theme";
 
 function App() {
   const teams = [
-    new Team("1610612737", "Atlanta Hawks", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.ATL, 7),
-    new Team("1610612738", "Boston Celtics", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.BOS, 3),
-    new Team("1610612751", "Brooklyn Nets", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.BKN, 6),
-    new Team("1610612766", "Charlotte Hornets", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.CHA, 15),
-    new Team("1610612741", "Chicago Bulls", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.CHI, 10),
-    new Team("1610612739", "Cleveland Cavaliers", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.CLE, 2),
-    new Team("1610612742", "Dallas Mavericks", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.DAL, 8),
-    new Team("1610612743", "Denver Nuggets", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.DEN, 3),
-    new Team("1610612765", "Detroit Pistons", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.DET, 12),
-    new Team("1610612744", "Golden State Warriors", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.GSW, 2),
-    new Team("1610612745", "Houston Rockets", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.HOU, 14),
-    new Team("1610612754", "Indiana Pacers", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.IND, 14),
-    new Team("1610612746", "Los Angeles Clippers", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.LAC, 4),
-    new Team("1610612747", "Los Angeles Lakers", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.LAL, 9),
-    new Team("1610612763", "Memphis Grizzlies", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.MEM, 7),
-    new Team("1610612748", "Miami Heat", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.MIA, 4),
-    new Team("1610612749", "Milwaukee Bucks", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.MIL, 1),
-    new Team("1610612750", "Minnesota Timberwolves", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.MIN, 5),
-    new Team("1610612740", "New Orleans Pelicans", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.NOP, 6),
-    new Team("1610612752", "New York Knicks", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.NYK, 9),
-    new Team("1610612760", "Oklahoma City Thunder", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.OKC, 15),
-    new Team("1610612753", "Orlando Magic", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.ORL, 13),
-    new Team("1610612755", "Philadelphia 76ers", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.PHI, 5),
-    new Team("1610612756", "Phoenix Suns", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.PHX, 1),
-    new Team("1610612757", "Portland Trail Blazers", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.POR, 11),
-    new Team("1610612758", "Sacramento Kings", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.SAC, 10),
-    new Team("1610612759", "San Antonio Spurs", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.SAS, 13),
-    new Team("1610612761", "Toronto Raptors", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.TOR, 8),
-    new Team("1610612764", "Washington Wizards", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.WAS, 11),
-    new Team("1610612762", "Utah Jazz", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.UTA, 12),
+    new Team("1", "Atlanta Hawks", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.ATL, 7),
+    new Team("2", "Boston Celtics", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.BOS, 3),
+    new Team("4", "Brooklyn Nets", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.BKN, 6),
+    new Team("5", "Charlotte Hornets", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.CHA, 15),
+    new Team("6", "Chicago Bulls", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.CHI, 10),
+    new Team("7", "Cleveland Cavaliers", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.CLE, 2),
+    new Team("8", "Dallas Mavericks", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.DAL, 8),
+    new Team("9", "Denver Nuggets", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.DEN, 3),
+    new Team("10", "Detroit Pistons", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.DET, 12),
+    new Team("11", "Golden State Warriors", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.GSW, 2),
+    new Team("14", "Houston Rockets", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.HOU, 14),
+    new Team("15", "Indiana Pacers", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.IND, 14),
+    new Team("16", "Los Angeles Clippers", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.LAC, 4),
+    new Team("17", "Los Angeles Lakers", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.LAL, 9),
+    new Team("19", "Memphis Grizzlies", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.MEM, 7),
+    new Team("20", "Miami Heat", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.MIA, 4),
+    new Team("21", "Milwaukee Bucks", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.MIL, 1),
+    new Team("22", "Minnesota Timberwolves", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.MIN, 5),
+    new Team("23", "New Orleans Pelicans", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.NOP, 6),
+    new Team("24", "New York Knicks", PersonEnum.RBR, ConferenceEnum.EAST, NBAIcons.NYK, 9),
+    new Team("25", "Oklahoma City Thunder", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.OKC, 15),
+    new Team("26", "Orlando Magic", PersonEnum.JD, ConferenceEnum.EAST, NBAIcons.ORL, 13),
+    new Team("27", "Philadelphia 76ers", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.PHI, 5),
+    new Team("28", "Phoenix Suns", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.PHX, 1),
+    new Team("29", "Portland Trail Blazers", PersonEnum.LN, ConferenceEnum.WEST, NBAIcons.POR, 11),
+    new Team("30", "Sacramento Kings", PersonEnum.JD, ConferenceEnum.WEST, NBAIcons.SAC, 10),
+    new Team("31", "San Antonio Spurs", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.SAS, 13),
+    new Team("38", "Toronto Raptors", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.TOR, 8),
+    new Team("41", "Washington Wizards", PersonEnum.LN, ConferenceEnum.EAST, NBAIcons.WAS, 11),
+    new Team("40", "Utah Jazz", PersonEnum.RBR, ConferenceEnum.WEST, NBAIcons.UTA, 12),
   ]
 
   const [personScoreboard, setPersonScoreboard] = React.useState<PersonScore[]>([]);
@@ -62,10 +59,10 @@ function App() {
   const [lastUpdate, setLastUpdate] = React.useState<string>("");
 
   function mapTeams(scoreboardResponse: any) {
-    for (let scoreboard of scoreboardResponse.standings) {
+    for (let scoreboard of scoreboardResponse.response) {
       for (let team of teams) {
-        if (team.id == scoreboard.teamId) {
-          team.wins = scoreboard.w
+        if (team.id == scoreboard.team.id) {
+          team.wins = scoreboard.win.total
           break;
         }
       }
@@ -85,7 +82,6 @@ function App() {
   React.useEffect(() => {
     setTeamsList(teams)
     populateScoreBoard()
-
     fetch("https://fine-plum-slug-cuff.cyclic.app/standings")
       .then((res) => {
         res.json().then(mapTeams)
