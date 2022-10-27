@@ -11,6 +11,7 @@ import {
   Th,
   Tbody,
   Td,
+  Spinner,
 } from "@chakra-ui/react"
 
 import { Team } from "./model/Team";
@@ -57,6 +58,8 @@ function App() {
   const [personScoreboard, setPersonScoreboard] = React.useState<PersonScore[]>([]);
   const [teamsList, setTeamsList] = React.useState<Team[]>([]);
   const [lastUpdate, setLastUpdate] = React.useState<string>("");
+  const [loading, setLoading] = React.useState<boolean>(true);
+  const [rowToHover, setRowToHover] = React.useState<PersonEnum>(PersonEnum.UNKNOWN);
 
   function mapTeams(scoreboardResponse: any) {
     for (let scoreboard of scoreboardResponse.response) {
@@ -69,6 +72,7 @@ function App() {
     }
     setTeamsList(teams)
     setLastUpdate(scoreboardResponse.lastUpdate)
+    setLoading(false)
     populateScoreBoard()
   }
 
@@ -78,7 +82,6 @@ function App() {
     let jd: PersonScore = new PersonScore(PersonEnum.JD, teams.filter(item => item.chosenBy === PersonEnum.JD).map(item => item.wins).reduce((prev, next) => prev + next));
     setPersonScoreboard([rbr, ln, jd]);
   }
-
   React.useEffect(() => {
     setTeamsList(teams)
     populateScoreBoard()
@@ -88,7 +91,10 @@ function App() {
       })
   }, []);
   return (
+  
     <ChakraProvider theme={theme}>
+    {!loading ? (
+        <> 
       <SimpleGrid minChildWidth='120px' spacing='60px' >
         <TableContainer maxWidth='400px' w='90%' m='auto' mt='3vh'>
           <Table size='lg'>
@@ -102,7 +108,7 @@ function App() {
             <Tbody>
               {personScoreboard.sort((a, b) => b.wins - a.wins).map((listValue, index) => {
                 return (
-                  <Tr>
+                  <Tr onMouseEnter={() => setRowToHover(listValue.person)} onClick={() => setRowToHover(listValue.person)} backgroundColor={rowToHover === listValue.person ? 'blue.800' : ''}>
                     <Td color='gray.400' pt={0} pb={0}>{index + 1}</Td>
                     <Td color='gray.400' pt={0} pb={0}>{listValue.person}</Td>
                     <Td color='white' textAlign={'center'} pt={0} pb={0}>{listValue.wins}</Td>
@@ -132,7 +138,7 @@ function App() {
               <Tbody>
                 {teamsList.filter(x => x.conference === ConferenceEnum.WEST).sort((a, b) => a.pick - b.pick).map((listValue) => {
                   return (
-                    <Tr>
+                    <Tr backgroundColor={rowToHover === listValue.chosenBy ? 'blue.800' : ''}>
                       <Td color='gray.400' pt={0} pb={0}>{listValue.pick}</Td>
                       <Td color='gray.400' pt={0} pb={0}>{listValue.chosenBy}</Td>
                       <Td color='gray.400 ' pt={0} pb={0}>{React.createElement(listValue.icon, { size: 40 })}</Td>
@@ -160,7 +166,7 @@ function App() {
               <Tbody>
                 {teamsList.filter(x => x.conference === ConferenceEnum.EAST).sort((a, b) => a.pick - b.pick).map((listValue) => {
                   return (
-                    <Tr>
+                    <Tr backgroundColor={rowToHover === listValue.chosenBy ? 'blue.800' : ''}>
                       <Td color='gray.400' pt={0} pb={0}>{listValue.pick}</Td>
                       <Td color='gray.400' pt={0} pb={0}>{listValue.chosenBy}</Td>
                       <Td color='gray.400' pt={0} pb={0}>{React.createElement(listValue.icon, { size: 40 })}</Td>
@@ -176,7 +182,18 @@ function App() {
       <SimpleGrid minChildWidth='120px' spacing='60px' m='4vh' >
         <Text color='gray.400' fontSize='xs'>Última Atualização: {lastUpdate}</Text>
       </SimpleGrid>
-    </ChakraProvider >
+      </>): (
+        <Spinner size='xl' style={{
+          position: 'fixed',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+
+        }}/>
+      )}
+    </ChakraProvider > 
+  
+   
   );
 }
 export default App;
