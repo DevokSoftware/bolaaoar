@@ -82,7 +82,7 @@ function App() {
   React.useEffect(() => {
     setTeamsList(teams)
     populateScoreBoard()
-    fetch("https://fine-plum-slug-cuff.cyclic.app/standings")
+    fetch("https://bolaaoar.onrender.com/standings")
       .then((res) => {
         res.json().then(mapTeams)
       })
