@@ -33,7 +33,7 @@ export const Homepage: React.FC = () => {
     getPicksFromSeason2324()
   );
   const picks_22_23 = getPicksFromSeason2223();
-
+  const picks_23_24 = getPicksFromSeason2324();
   function mapTeams(scoreboardResponse: any) {
     setCurrentYearPicks((prevPicks) => {
       const updatedPicks = prevPicks.map((team) => {
@@ -54,12 +54,12 @@ export const Homepage: React.FC = () => {
     });
   }
 
-  React.useEffect(() => {
-    // fetch("http://localhost:3001/standings")
-    fetch("https://elated-tuxedo-mite.cyclic.app/standings")
-      .then((response) => response.json())
-      .then((data) => mapTeams(data));
-  }, []);
+  // React.useEffect(() => {
+  //   // fetch("http://localhost:3001/standings")
+  //   fetch("https://elated-tuxedo-mite.cyclic.app/standings")
+  //     .then((response) => response.json())
+  //     .then((data) => mapTeams(data));
+  // }, []);
 
   return (
     <ChakraProvider theme={theme}>
@@ -73,10 +73,7 @@ export const Homepage: React.FC = () => {
           <TabPanels>
             <TabPanel>
               {/* Season 23/24*/}
-              <Season
-                picks={currentSeasonPicks}
-                lastUpdate={currentSeasonLastUpdate}
-              />
+              <Season picks={picks_23_24} lastUpdate={null} />
             </TabPanel>
             <TabPanel>
               {/* Season 22/23*/}

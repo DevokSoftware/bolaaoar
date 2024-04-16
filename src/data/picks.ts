@@ -289,7 +289,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.ATL,
       pick: 5,
-      wins: 0,
+      wins: 36,
     },
     {
       id: 2,
@@ -298,7 +298,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.BOS,
       pick: 1,
-      wins: 0,
+      wins: 64,
     },
     {
       id: 4,
@@ -307,7 +307,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.BKN,
       pick: 7,
-      wins: 0,
+      wins: 32,
     },
     {
       id: 5,
@@ -316,7 +316,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.CHA,
       pick: 15,
-      wins: 0,
+      wins: 21,
     },
     {
       id: 6,
@@ -325,7 +325,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.CHI,
       pick: 12,
-      wins: 0,
+      wins: 39,
     },
     {
       id: 7,
@@ -334,7 +334,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.CLE,
       pick: 3,
-      wins: 0,
+      wins: 48,
     },
     {
       id: 8,
@@ -343,7 +343,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.DAL,
       pick: 10,
-      wins: 0,
+      wins: 50,
     },
     {
       id: 9,
@@ -352,7 +352,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.DEN,
       pick: 1,
-      wins: 0,
+      wins: 57,
     },
     {
       id: 10,
@@ -361,7 +361,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.DET,
       pick: 13,
-      wins: 0,
+      wins: 14,
     },
     {
       id: 11,
@@ -370,7 +370,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.GSW,
       pick: 6,
-      wins: 0,
+      wins: 46,
     },
     {
       id: 14,
@@ -379,7 +379,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.HOU,
       pick: 12,
-      wins: 0,
+      wins: 41,
     },
     {
       id: 15,
@@ -388,7 +388,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.IND,
       pick: 9,
-      wins: 0,
+      wins: 47,
     },
     {
       id: 16,
@@ -397,7 +397,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.LAC,
       pick: 4,
-      wins: 0,
+      wins: 51,
     },
     {
       id: 17,
@@ -406,7 +406,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.LAL,
       pick: 3,
-      wins: 0,
+      wins: 47,
     },
     {
       id: 19,
@@ -415,7 +415,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.MEM,
       pick: 5,
-      wins: 0,
+      wins: 27,
     },
     {
       id: 20,
@@ -424,7 +424,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.MIA,
       pick: 8,
-      wins: 0,
+      wins: 46,
     },
     {
       id: 21,
@@ -433,7 +433,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.MIL,
       pick: 2,
-      wins: 0,
+      wins: 49,
     },
     {
       id: 22,
@@ -442,7 +442,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.MIN,
       pick: 11,
-      wins: 0,
+      wins: 56,
     },
     {
       id: 23,
@@ -451,7 +451,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.NOP,
       pick: 8,
-      wins: 0,
+      wins: 49,
     },
     {
       id: 24,
@@ -460,7 +460,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.NYK,
       pick: 6,
-      wins: 0,
+      wins: 50,
     },
     {
       id: 25,
@@ -469,7 +469,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.OKC,
       pick: 9,
-      wins: 0,
+      wins: 57,
     },
     {
       id: 26,
@@ -478,7 +478,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.ORL,
       pick: 10,
-      wins: 0,
+      wins: 47,
     },
     {
       id: 27,
@@ -487,7 +487,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.PHI,
       pick: 4,
-      wins: 0,
+      wins: 47,
     },
     {
       id: 28,
@@ -496,7 +496,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.PHX,
       pick: 2,
-      wins: 0,
+      wins: 49,
     },
     {
       id: 29,
@@ -505,7 +505,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.POR,
       pick: 15,
-      wins: 0,
+      wins: 21,
     },
     {
       id: 30,
@@ -514,7 +514,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.SAC,
       pick: 7,
-      wins: 0,
+      wins: 46,
     },
     {
       id: 31,
@@ -523,7 +523,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.SAS,
       pick: 14,
-      wins: 0,
+      wins: 22,
     },
     {
       id: 38,
@@ -532,7 +532,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.TOR,
       pick: 11,
-      wins: 0,
+      wins: 25,
     },
     {
       id: 40,
@@ -541,7 +541,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.WEST,
       icon: NBAIcons.UTA,
       pick: 13,
-      wins: 0,
+      wins: 31,
     },
     {
       id: 41,
@@ -550,7 +550,7 @@ export function getPicksFromSeason2324(): ITeam[] {
       conference: ConferenceEnum.EAST,
       icon: NBAIcons.WAS,
       pick: 14,
-      wins: 0,
+      wins: 15,
     },
   ];
 
