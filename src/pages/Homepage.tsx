@@ -28,7 +28,7 @@ import { getPicksFromSeason2223, getPicksFromSeason2324 } from "../data/picks";
 export const Homepage: React.FC = () => {
   const [currentSeasonLastUpdate, setCurrentSeasonLastUpdate] =
     React.useState<string>("");
-  const [loading, setLoading] = React.useState<boolean>(true);
+  const [loading, setLoading] = React.useState<boolean>(false);
   const [currentSeasonPicks, setCurrentYearPicks] = React.useState<ITeam[]>(
     getPicksFromSeason2324()
   );
