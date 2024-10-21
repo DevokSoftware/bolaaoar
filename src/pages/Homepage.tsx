@@ -23,17 +23,22 @@ import {
 import { ITeam, Team } from "../model/Team";
 import theme from "../theme";
 import Season from "./Season";
-import { getPicksFromSeason2223, getPicksFromSeason2324 } from "../data/picks";
+import {
+  getPicksFromSeason2223,
+  getPicksFromSeason2324,
+  getPicksFromSeason2425,
+} from "../data/picks";
 
 export const Homepage: React.FC = () => {
   const [currentSeasonLastUpdate, setCurrentSeasonLastUpdate] =
     React.useState<string>("");
   const [loading, setLoading] = React.useState<boolean>(false);
   const [currentSeasonPicks, setCurrentYearPicks] = React.useState<ITeam[]>(
-    getPicksFromSeason2324()
+    getPicksFromSeason2425()
   );
   const picks_22_23 = getPicksFromSeason2223();
   const picks_23_24 = getPicksFromSeason2324();
+
   function mapTeams(scoreboardResponse: any) {
     setCurrentYearPicks((prevPicks) => {
       const updatedPicks = prevPicks.map((team) => {
@@ -66,11 +71,19 @@ export const Homepage: React.FC = () => {
       {!loading ? (
         <Tabs>
           <TabList>
+            <Tab>Season 24/25</Tab>
             <Tab>Season 23/24</Tab>
             <Tab>Season 22/23</Tab>
           </TabList>
 
           <TabPanels>
+            <TabPanel>
+              {/* Season 24/25*/}
+              <Season
+                picks={currentSeasonPicks}
+                lastUpdate={currentSeasonLastUpdate}
+              />
+            </TabPanel>
             <TabPanel>
               {/* Season 23/24*/}
               <Season picks={picks_23_24} lastUpdate={null} />
