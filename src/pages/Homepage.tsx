@@ -59,12 +59,12 @@ export const Homepage: React.FC = () => {
     });
   }
 
-  // React.useEffect(() => {
-  //   // fetch("http://localhost:3001/standings")
-  //   fetch("https://elated-tuxedo-mite.cyclic.app/standings")
-  //     .then((response) => response.json())
-  //     .then((data) => mapTeams(data));
-  // }, []);
+  React.useEffect(() => {
+    // fetch("http://localhost:3001/standings")
+    fetch("https://elated-tuxedo-mite.cyclic.app/standings")
+      .then((response) => response.json())
+      .then((data) => mapTeams(data));
+  }, []);
 
   return (
     <ChakraProvider theme={theme}>
