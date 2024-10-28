@@ -61,7 +61,7 @@ export const Homepage: React.FC = () => {
 
   React.useEffect(() => {
     // fetch("http://localhost:3001/standings")
-    fetch("https://elated-tuxedo-mite.cyclic.app/standings")
+    fetch("https://bolaaoar.onrender.com/standings")
       .then((response) => response.json())
       .then((data) => mapTeams(data));
   }, []);
