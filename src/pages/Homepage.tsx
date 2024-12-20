@@ -28,6 +28,7 @@ import {
   getPicksFromSeason2324,
   getPicksFromSeason2425,
 } from "../data/picks";
+import standings from "../data/standings.json";
 
 export const Homepage: React.FC = () => {
   const [currentSeasonLastUpdate, setCurrentSeasonLastUpdate] =
@@ -61,9 +62,11 @@ export const Homepage: React.FC = () => {
 
   React.useEffect(() => {
     // fetch("http://localhost:3001/standings")
-    fetch("https://bolaaoar.onrender.com/standings")
-      .then((response) => response.json())
-      .then((data) => mapTeams(data));
+    // GET INFO FROM BACKEND
+    // fetch("https://bolaaoar.onrender.com/standings")
+    //   .then((response) => response.json())
+    //   .then((data) => mapTeams(data));
+    mapTeams(standings);
   }, []);
 
   return (
