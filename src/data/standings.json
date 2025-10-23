@@ -11,23 +11,23 @@
       "league": "standard",
       "season": 2025,
       "team": {
-        "id": 24,
-        "name": "New York Knicks",
-        "nickname": "Knicks",
-        "code": "NYK",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
       },
       "conference": {
         "name": "east",
-        "rank": 11,
+        "rank": 9,
         "win": 0,
-        "loss": 0
+        "loss": 1
       },
       "division": {
         "name": "atlantic",
-        "rank": 3,
+        "rank": 4,
         "win": 0,
-        "loss": 0,
+        "loss": 1,
         "gamesBehind": null
       },
       "win": {
@@ -35,18 +35,18 @@
         "away": 0,
         "total": 0,
         "percentage": "0.000",
-        "lastTen": 2
+        "lastTen": 0
       },
       "loss": {
         "home": 0,
         "away": 0,
-        "total": 0,
-        "percentage": "0.000",
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 0
       },
       "gamesBehind": null,
-      "streak": 2,
-      "winStreak": true,
+      "streak": null,
+      "winStreak": false,
       "tieBreakerPoints": null
     },
     {
@@ -61,64 +61,64 @@
       },
       "conference": {
         "name": "east",
-        "rank": 10,
+        "rank": 14,
         "win": 0,
-        "loss": 0
+        "loss": 1
       },
       "division": {
         "name": "atlantic",
-        "rank": 2,
+        "rank": 5,
         "win": 0,
-        "loss": 0,
-        "gamesBehind": "0.5"
+        "loss": 1,
+        "gamesBehind": null
       },
       "win": {
-        "home": 1,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
-      },
-      "loss": {
         "home": 0,
         "away": 0,
         "total": 0,
         "percentage": "0.000",
         "lastTen": 0
       },
-      "gamesBehind": "0.5",
-      "streak": 1,
-      "winStreak": true,
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "gamesBehind": null,
+      "streak": null,
+      "winStreak": false,
       "tieBreakerPoints": null
     },
     {
       "league": "standard",
       "season": 2025,
       "team": {
-        "id": 2,
-        "name": "Boston Celtics",
-        "nickname": "Celtics",
-        "code": "BOS",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+        "id": 24,
+        "name": "New York Knicks",
+        "nickname": "Knicks",
+        "code": "NYK",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
       },
       "conference": {
         "name": "east",
-        "rank": 2,
-        "win": 0,
+        "rank": 4,
+        "win": 1,
         "loss": 0
       },
       "division": {
         "name": "atlantic",
-        "rank": 1,
-        "win": 0,
+        "rank": 2,
+        "win": 1,
         "loss": 0,
-        "gamesBehind": "1"
+        "gamesBehind": null
       },
       "win": {
         "home": 0,
         "away": 0,
-        "total": 0,
-        "percentage": "0.000",
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 0
       },
       "loss": {
@@ -128,7 +128,49 @@
         "percentage": "0.000",
         "lastTen": 0
       },
-      "gamesBehind": "1",
+      "gamesBehind": null,
+      "streak": null,
+      "winStreak": false,
+      "tieBreakerPoints": null
+    },
+    {
+      "league": "standard",
+      "season": 2025,
+      "team": {
+        "id": 27,
+        "name": "Philadelphia 76ers",
+        "nickname": "76ers",
+        "code": "PHI",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Philadelphia_76ers_logo.svg/1024px-Philadelphia_76ers_logo.svg.png"
+      },
+      "conference": {
+        "name": "east",
+        "rank": 7,
+        "win": 1,
+        "loss": 0
+      },
+      "division": {
+        "name": "atlantic",
+        "rank": 3,
+        "win": 1,
+        "loss": 0,
+        "gamesBehind": null
+      },
+      "win": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 0,
+        "percentage": "0.000",
+        "lastTen": 0
+      },
+      "gamesBehind": null,
       "streak": null,
       "winStreak": false,
       "tieBreakerPoints": null
@@ -145,107 +187,23 @@
       },
       "conference": {
         "name": "east",
-        "rank": 14,
-        "win": 0,
+        "rank": 1,
+        "win": 1,
         "loss": 0
       },
       "division": {
         "name": "atlantic",
-        "rank": 5,
-        "win": 0,
-        "loss": 0,
-        "gamesBehind": "1.5"
-      },
-      "win": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 0
-      },
-      "loss": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
-      },
-      "gamesBehind": "1.5",
-      "streak": 1,
-      "winStreak": false,
-      "tieBreakerPoints": null
-    },
-    {
-      "league": "standard",
-      "season": 2025,
-      "team": {
-        "id": 27,
-        "name": "Philadelphia 76ers",
-        "nickname": "76ers",
-        "code": "PHI",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Philadelphia_76ers_logo.svg/1024px-Philadelphia_76ers_logo.svg.png"
-      },
-      "conference": {
-        "name": "east",
-        "rank": 13,
-        "win": 0,
-        "loss": 0
-      },
-      "division": {
-        "name": "atlantic",
-        "rank": 4,
-        "win": 0,
-        "loss": 0,
-        "gamesBehind": "2"
-      },
-      "win": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 0
-      },
-      "loss": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 2
-      },
-      "gamesBehind": "2",
-      "streak": 2,
-      "winStreak": false,
-      "tieBreakerPoints": null
-    },
-    {
-      "league": "standard",
-      "season": 2025,
-      "team": {
-        "id": 10,
-        "name": "Detroit Pistons",
-        "nickname": "Pistons",
-        "code": "DET",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_of_the_Detroit_Pistons.png/300px-Logo_of_the_Detroit_Pistons.png"
-      },
-      "conference": {
-        "name": "east",
-        "rank": 6,
-        "win": 0,
-        "loss": 0
-      },
-      "division": {
-        "name": "central",
-        "rank": 3,
-        "win": 0,
+        "rank": 1,
+        "win": 1,
         "loss": 0,
         "gamesBehind": null
       },
       "win": {
         "home": 0,
-        "away": 1,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
       },
       "loss": {
         "home": 0,
@@ -255,50 +213,8 @@
         "lastTen": 0
       },
       "gamesBehind": null,
-      "streak": 1,
-      "winStreak": true,
-      "tieBreakerPoints": null
-    },
-    {
-      "league": "standard",
-      "season": 2025,
-      "team": {
-        "id": 21,
-        "name": "Milwaukee Bucks",
-        "nickname": "Bucks",
-        "code": "MIL",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Milwaukee_Bucks_logo.svg/620px-Milwaukee_Bucks_logo.svg.png"
-      },
-      "conference": {
-        "name": "east",
-        "rank": 9,
-        "win": 0,
-        "loss": 0
-      },
-      "division": {
-        "name": "central",
-        "rank": 5,
-        "win": 0,
-        "loss": 0,
-        "gamesBehind": null
-      },
-      "win": {
-        "home": 0,
-        "away": 1,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
-      },
-      "loss": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 0
-      },
-      "gamesBehind": null,
-      "streak": 1,
-      "winStreak": true,
+      "streak": null,
+      "winStreak": false,
       "tieBreakerPoints": null
     },
     {
@@ -313,22 +229,22 @@
       },
       "conference": {
         "name": "east",
-        "rank": 4,
-        "win": 0,
+        "rank": 6,
+        "win": 1,
         "loss": 0
       },
       "division": {
         "name": "central",
-        "rank": 1,
-        "win": 0,
+        "rank": 2,
+        "win": 1,
         "loss": 0,
-        "gamesBehind": "0.5"
+        "gamesBehind": null
       },
       "win": {
         "home": 0,
         "away": 0,
-        "total": 0,
-        "percentage": "0.000",
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 0
       },
       "loss": {
@@ -338,7 +254,7 @@
         "percentage": "0.000",
         "lastTen": 0
       },
-      "gamesBehind": "0.5",
+      "gamesBehind": null,
       "streak": null,
       "winStreak": false,
       "tieBreakerPoints": null
@@ -355,16 +271,16 @@
       },
       "conference": {
         "name": "east",
-        "rank": 5,
+        "rank": 12,
         "win": 0,
-        "loss": 0
+        "loss": 1
       },
       "division": {
         "name": "central",
-        "rank": 2,
+        "rank": 5,
         "win": 0,
-        "loss": 0,
-        "gamesBehind": "0.5"
+        "loss": 1,
+        "gamesBehind": null
       },
       "win": {
         "home": 0,
@@ -376,11 +292,53 @@
       "loss": {
         "home": 0,
         "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "gamesBehind": null,
+      "streak": null,
+      "winStreak": false,
+      "tieBreakerPoints": null
+    },
+    {
+      "league": "standard",
+      "season": 2025,
+      "team": {
+        "id": 10,
+        "name": "Detroit Pistons",
+        "nickname": "Pistons",
+        "code": "DET",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_of_the_Detroit_Pistons.png/300px-Logo_of_the_Detroit_Pistons.png"
+      },
+      "conference": {
+        "name": "east",
+        "rank": 11,
+        "win": 0,
+        "loss": 1
+      },
+      "division": {
+        "name": "central",
+        "rank": 4,
+        "win": 0,
+        "loss": 1,
+        "gamesBehind": null
+      },
+      "win": {
+        "home": 0,
+        "away": 0,
         "total": 0,
         "percentage": "0.000",
         "lastTen": 0
       },
-      "gamesBehind": "0.5",
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "gamesBehind": null,
       "streak": null,
       "winStreak": false,
       "tieBreakerPoints": null
@@ -397,55 +355,13 @@
       },
       "conference": {
         "name": "east",
-        "rank": 7,
+        "rank": 8,
         "win": 0,
         "loss": 0
       },
       "division": {
         "name": "central",
-        "rank": 4,
-        "win": 0,
-        "loss": 0,
-        "gamesBehind": "0.5"
-      },
-      "win": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 0
-      },
-      "loss": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 0
-      },
-      "gamesBehind": "0.5",
-      "streak": null,
-      "winStreak": false,
-      "tieBreakerPoints": null
-    },
-    {
-      "league": "standard",
-      "season": 2025,
-      "team": {
-        "id": 26,
-        "name": "Orlando Magic",
-        "nickname": "Magic",
-        "code": "ORL",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Orlando_Magic_logo.svg/1024px-Orlando_Magic_logo.svg.png"
-      },
-      "conference": {
-        "name": "east",
-        "rank": 12,
-        "win": 0,
-        "loss": 0
-      },
-      "division": {
-        "name": "southeast",
-        "rank": 4,
+        "rank": 3,
         "win": 0,
         "loss": 0,
         "gamesBehind": null
@@ -455,7 +371,7 @@
         "away": 0,
         "total": 0,
         "percentage": "0.000",
-        "lastTen": 1
+        "lastTen": 0
       },
       "loss": {
         "home": 0,
@@ -465,38 +381,38 @@
         "lastTen": 0
       },
       "gamesBehind": null,
-      "streak": 1,
-      "winStreak": true,
+      "streak": null,
+      "winStreak": false,
       "tieBreakerPoints": null
     },
     {
       "league": "standard",
       "season": 2025,
       "team": {
-        "id": 41,
-        "name": "Washington Wizards",
-        "nickname": "Wizards",
-        "code": "WAS",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/archive/d/d6/20161212034849%21Wizards2015.png"
+        "id": 21,
+        "name": "Milwaukee Bucks",
+        "nickname": "Bucks",
+        "code": "MIL",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Milwaukee_Bucks_logo.svg/620px-Milwaukee_Bucks_logo.svg.png"
       },
       "conference": {
         "name": "east",
-        "rank": 15,
-        "win": 0,
+        "rank": 3,
+        "win": 1,
         "loss": 0
       },
       "division": {
-        "name": "southeast",
-        "rank": 5,
-        "win": 0,
+        "name": "central",
+        "rank": 1,
+        "win": 1,
         "loss": 0,
-        "gamesBehind": "0.5"
+        "gamesBehind": null
       },
       "win": {
         "home": 0,
         "away": 0,
-        "total": 0,
-        "percentage": "0.000",
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 0
       },
       "loss": {
@@ -506,7 +422,7 @@
         "percentage": "0.000",
         "lastTen": 0
       },
-      "gamesBehind": "0.5",
+      "gamesBehind": null,
       "streak": null,
       "winStreak": false,
       "tieBreakerPoints": null
@@ -523,58 +439,16 @@
       },
       "conference": {
         "name": "east",
-        "rank": 1,
+        "rank": 15,
         "win": 0,
-        "loss": 0
+        "loss": 1
       },
       "division": {
         "name": "southeast",
-        "rank": 1,
+        "rank": 5,
         "win": 0,
-        "loss": 0,
-        "gamesBehind": "1"
-      },
-      "win": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 0
-      },
-      "loss": {
-        "home": 0,
-        "away": 1,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
-      },
-      "gamesBehind": "1",
-      "streak": 1,
-      "winStreak": false,
-      "tieBreakerPoints": null
-    },
-    {
-      "league": "standard",
-      "season": 2025,
-      "team": {
-        "id": 5,
-        "name": "Charlotte Hornets",
-        "nickname": "Hornets",
-        "code": "CHA",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/f/f3/Hornets_de_Charlotte_logo.svg/1200px-Hornets_de_Charlotte_logo.svg.png"
-      },
-      "conference": {
-        "name": "east",
-        "rank": 3,
-        "win": 0,
-        "loss": 0
-      },
-      "division": {
-        "name": "southeast",
-        "rank": 2,
-        "win": 0,
-        "loss": 0,
-        "gamesBehind": "1"
+        "loss": 1,
+        "gamesBehind": null
       },
       "win": {
         "home": 0,
@@ -586,12 +460,12 @@
       "loss": {
         "home": 0,
         "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
       },
-      "gamesBehind": "1",
-      "streak": 1,
+      "gamesBehind": null,
+      "streak": null,
       "winStreak": false,
       "tieBreakerPoints": null
     },
@@ -607,16 +481,16 @@
       },
       "conference": {
         "name": "east",
-        "rank": 8,
+        "rank": 10,
         "win": 0,
-        "loss": 0
+        "loss": 1
       },
       "division": {
         "name": "southeast",
         "rank": 3,
         "win": 0,
-        "loss": 0,
-        "gamesBehind": "1.5"
+        "loss": 1,
+        "gamesBehind": null
       },
       "win": {
         "home": 0,
@@ -626,14 +500,14 @@
         "lastTen": 0
       },
       "loss": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 2
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
       },
-      "gamesBehind": "1.5",
-      "streak": 2,
+      "gamesBehind": null,
+      "streak": null,
       "winStreak": false,
       "tieBreakerPoints": null
     },
@@ -641,23 +515,65 @@
       "league": "standard",
       "season": 2025,
       "team": {
-        "id": 22,
-        "name": "Minnesota Timberwolves",
-        "nickname": "Timberwolves",
-        "code": "MIN",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Timberwolves_du_Minnesota_logo_2017.png/200px-Timberwolves_du_Minnesota_logo_2017.png"
+        "id": 26,
+        "name": "Orlando Magic",
+        "nickname": "Magic",
+        "code": "ORL",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Orlando_Magic_logo.svg/1024px-Orlando_Magic_logo.svg.png"
       },
       "conference": {
-        "name": "west",
-        "rank": 7,
-        "win": 0,
+        "name": "east",
+        "rank": 5,
+        "win": 1,
         "loss": 0
       },
       "division": {
-        "name": "northwest",
-        "rank": 3,
-        "win": 0,
+        "name": "southeast",
+        "rank": 2,
+        "win": 1,
         "loss": 0,
+        "gamesBehind": null
+      },
+      "win": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 0,
+        "percentage": "0.000",
+        "lastTen": 0
+      },
+      "gamesBehind": null,
+      "streak": null,
+      "winStreak": false,
+      "tieBreakerPoints": null
+    },
+    {
+      "league": "standard",
+      "season": 2025,
+      "team": {
+        "id": 41,
+        "name": "Washington Wizards",
+        "nickname": "Wizards",
+        "code": "WAS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/archive/d/d6/20161212034849%21Wizards2015.png"
+      },
+      "conference": {
+        "name": "east",
+        "rank": 13,
+        "win": 0,
+        "loss": 1
+      },
+      "division": {
+        "name": "southeast",
+        "rank": 4,
+        "win": 0,
+        "loss": 1,
         "gamesBehind": null
       },
       "win": {
@@ -665,6 +581,90 @@
         "away": 0,
         "total": 0,
         "percentage": "0.000",
+        "lastTen": 0
+      },
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "gamesBehind": null,
+      "streak": null,
+      "winStreak": false,
+      "tieBreakerPoints": null
+    },
+    {
+      "league": "standard",
+      "season": 2025,
+      "team": {
+        "id": 5,
+        "name": "Charlotte Hornets",
+        "nickname": "Hornets",
+        "code": "CHA",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/f/f3/Hornets_de_Charlotte_logo.svg/1200px-Hornets_de_Charlotte_logo.svg.png"
+      },
+      "conference": {
+        "name": "east",
+        "rank": 2,
+        "win": 1,
+        "loss": 0
+      },
+      "division": {
+        "name": "southeast",
+        "rank": 1,
+        "win": 1,
+        "loss": 0,
+        "gamesBehind": null
+      },
+      "win": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 0,
+        "percentage": "0.000",
+        "lastTen": 0
+      },
+      "gamesBehind": null,
+      "streak": null,
+      "winStreak": false,
+      "tieBreakerPoints": null
+    },
+    {
+      "league": "standard",
+      "season": 2025,
+      "team": {
+        "id": 25,
+        "name": "Oklahoma City Thunder",
+        "nickname": "Thunder",
+        "code": "OKC",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Oklahoma_City_Thunder.svg/836px-Oklahoma_City_Thunder.svg.png"
+      },
+      "conference": {
+        "name": "west",
+        "rank": 7,
+        "win": 1,
+        "loss": 0
+      },
+      "division": {
+        "name": "northwest",
+        "rank": 3,
+        "win": 1,
+        "loss": 0,
+        "gamesBehind": null
+      },
+      "win": {
+        "home": 1,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 1
       },
       "loss": {
@@ -691,91 +691,7 @@
       },
       "conference": {
         "name": "west",
-        "rank": 4,
-        "win": 0,
-        "loss": 0
-      },
-      "division": {
-        "name": "northwest",
-        "rank": 2,
-        "win": 0,
-        "loss": 0,
-        "gamesBehind": "0.5"
-      },
-      "win": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
-      },
-      "loss": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
-      },
-      "gamesBehind": "0.5",
-      "streak": 1,
-      "winStreak": true,
-      "tieBreakerPoints": null
-    },
-    {
-      "league": "standard",
-      "season": 2025,
-      "team": {
-        "id": 25,
-        "name": "Oklahoma City Thunder",
-        "nickname": "Thunder",
-        "code": "OKC",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Oklahoma_City_Thunder.svg/836px-Oklahoma_City_Thunder.svg.png"
-      },
-      "conference": {
-        "name": "west",
-        "rank": 2,
-        "win": 1,
-        "loss": 0
-      },
-      "division": {
-        "name": "northwest",
-        "rank": 1,
-        "win": 1,
-        "loss": 0,
-        "gamesBehind": "0.5"
-      },
-      "win": {
-        "home": 0,
-        "away": 0,
-        "total": 1,
-        "percentage": "1.000",
-        "lastTen": 1
-      },
-      "loss": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
-      },
-      "gamesBehind": "0.5",
-      "streak": 1,
-      "winStreak": false,
-      "tieBreakerPoints": null
-    },
-    {
-      "league": "standard",
-      "season": 2025,
-      "team": {
-        "id": 29,
-        "name": "Portland Trail Blazers",
-        "nickname": "Trail Blazers",
-        "code": "POR",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Portland_Trail_Blazers_logo.svg/1200px-Portland_Trail_Blazers_logo.svg.png"
-      },
-      "conference": {
-        "name": "west",
-        "rank": 10,
+        "rank": 8,
         "win": 0,
         "loss": 0
       },
@@ -798,6 +714,90 @@
         "away": 0,
         "total": 0,
         "percentage": "0.000",
+        "lastTen": 0
+      },
+      "gamesBehind": "0.5",
+      "streak": null,
+      "winStreak": false,
+      "tieBreakerPoints": null
+    },
+    {
+      "league": "standard",
+      "season": 2025,
+      "team": {
+        "id": 22,
+        "name": "Minnesota Timberwolves",
+        "nickname": "Timberwolves",
+        "code": "MIN",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Timberwolves_du_Minnesota_logo_2017.png/200px-Timberwolves_du_Minnesota_logo_2017.png"
+      },
+      "conference": {
+        "name": "west",
+        "rank": 6,
+        "win": 1,
+        "loss": 0
+      },
+      "division": {
+        "name": "northwest",
+        "rank": 2,
+        "win": 1,
+        "loss": 0,
+        "gamesBehind": "0.5"
+      },
+      "win": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 0,
+        "percentage": "0.000",
+        "lastTen": 0
+      },
+      "gamesBehind": "0.5",
+      "streak": null,
+      "winStreak": false,
+      "tieBreakerPoints": null
+    },
+    {
+      "league": "standard",
+      "season": 2025,
+      "team": {
+        "id": 29,
+        "name": "Portland Trail Blazers",
+        "nickname": "Trail Blazers",
+        "code": "POR",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Portland_Trail_Blazers_logo.svg/1200px-Portland_Trail_Blazers_logo.svg.png"
+      },
+      "conference": {
+        "name": "west",
+        "rank": 11,
+        "win": 0,
+        "loss": 1
+      },
+      "division": {
+        "name": "northwest",
+        "rank": 5,
+        "win": 0,
+        "loss": 1,
+        "gamesBehind": "0.5"
+      },
+      "win": {
+        "home": 0,
+        "away": 0,
+        "total": 0,
+        "percentage": "0.000",
+        "lastTen": 0
+      },
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 0
       },
       "gamesBehind": "0.5",
@@ -817,22 +817,22 @@
       },
       "conference": {
         "name": "west",
-        "rank": 13,
-        "win": 0,
+        "rank": 2,
+        "win": 1,
         "loss": 0
       },
       "division": {
         "name": "northwest",
-        "rank": 5,
-        "win": 0,
+        "rank": 1,
+        "win": 1,
         "loss": 0,
         "gamesBehind": "0.5"
       },
       "win": {
         "home": 0,
         "away": 0,
-        "total": 0,
-        "percentage": "0.000",
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 0
       },
       "loss": {
@@ -851,48 +851,6 @@
       "league": "standard",
       "season": 2025,
       "team": {
-        "id": 28,
-        "name": "Phoenix Suns",
-        "nickname": "Suns",
-        "code": "PHX",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/5/56/Phoenix_Suns_2013.png"
-      },
-      "conference": {
-        "name": "west",
-        "rank": 9,
-        "win": 0,
-        "loss": 0
-      },
-      "division": {
-        "name": "pacific",
-        "rank": 3,
-        "win": 0,
-        "loss": 0,
-        "gamesBehind": null
-      },
-      "win": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
-      },
-      "loss": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 0
-      },
-      "gamesBehind": null,
-      "streak": 1,
-      "winStreak": true,
-      "tieBreakerPoints": null
-    },
-    {
-      "league": "standard",
-      "season": 2025,
-      "team": {
         "id": 11,
         "name": "Golden State Warriors",
         "nickname": "Warriors",
@@ -901,7 +859,7 @@
       },
       "conference": {
         "name": "west",
-        "rank": 1,
+        "rank": 3,
         "win": 1,
         "loss": 0
       },
@@ -913,8 +871,8 @@
         "gamesBehind": null
       },
       "win": {
-        "home": 1,
-        "away": 0,
+        "home": 0,
+        "away": 1,
         "total": 1,
         "percentage": "1.000",
         "lastTen": 1
@@ -943,15 +901,15 @@
       },
       "conference": {
         "name": "west",
-        "rank": 5,
+        "rank": 14,
         "win": 0,
-        "loss": 0
+        "loss": 1
       },
       "division": {
         "name": "pacific",
-        "rank": 2,
+        "rank": 5,
         "win": 0,
-        "loss": 0,
+        "loss": 1,
         "gamesBehind": "0.5"
       },
       "win": {
@@ -959,6 +917,48 @@
         "away": 0,
         "total": 0,
         "percentage": "0.000",
+        "lastTen": 0
+      },
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "gamesBehind": "0.5",
+      "streak": null,
+      "winStreak": false,
+      "tieBreakerPoints": null
+    },
+    {
+      "league": "standard",
+      "season": 2025,
+      "team": {
+        "id": 28,
+        "name": "Phoenix Suns",
+        "nickname": "Suns",
+        "code": "PHX",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/5/56/Phoenix_Suns_2013.png"
+      },
+      "conference": {
+        "name": "west",
+        "rank": 5,
+        "win": 1,
+        "loss": 0
+      },
+      "division": {
+        "name": "pacific",
+        "rank": 2,
+        "win": 1,
+        "loss": 0,
+        "gamesBehind": "0.5"
+      },
+      "win": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 0
       },
       "loss": {
@@ -985,15 +985,15 @@
       },
       "conference": {
         "name": "west",
-        "rank": 11,
+        "rank": 10,
         "win": 0,
-        "loss": 0
+        "loss": 1
       },
       "division": {
         "name": "pacific",
-        "rank": 4,
+        "rank": 3,
         "win": 0,
-        "loss": 0,
+        "loss": 1,
         "gamesBehind": "0.5"
       },
       "win": {
@@ -1006,8 +1006,8 @@
       "loss": {
         "home": 0,
         "away": 0,
-        "total": 0,
-        "percentage": "0.000",
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 0
       },
       "gamesBehind": "0.5",
@@ -1027,16 +1027,16 @@
       },
       "conference": {
         "name": "west",
-        "rank": 15,
+        "rank": 13,
         "win": 0,
         "loss": 1
       },
       "division": {
         "name": "pacific",
-        "rank": 5,
+        "rank": 4,
         "win": 0,
         "loss": 1,
-        "gamesBehind": "1.5"
+        "gamesBehind": "1"
       },
       "win": {
         "home": 0,
@@ -1046,14 +1046,14 @@
         "lastTen": 0
       },
       "loss": {
-        "home": 0,
-        "away": 1,
+        "home": 1,
+        "away": 0,
         "total": 1,
         "percentage": "1.000",
-        "lastTen": 2
+        "lastTen": 1
       },
-      "gamesBehind": "1.5",
-      "streak": 2,
+      "gamesBehind": "1",
+      "streak": 1,
       "winStreak": false,
       "tieBreakerPoints": null
     },
@@ -1069,15 +1069,15 @@
       },
       "conference": {
         "name": "west",
-        "rank": 8,
+        "rank": 12,
         "win": 0,
-        "loss": 0
+        "loss": 1
       },
       "division": {
         "name": "southwest",
-        "rank": 3,
+        "rank": 4,
         "win": 0,
-        "loss": 0,
+        "loss": 1,
         "gamesBehind": null
       },
       "win": {
@@ -1085,60 +1085,18 @@
         "away": 0,
         "total": 0,
         "percentage": "0.000",
-        "lastTen": 2
+        "lastTen": 0
       },
       "loss": {
         "home": 0,
         "away": 0,
-        "total": 0,
-        "percentage": "0.000",
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 0
       },
       "gamesBehind": null,
-      "streak": 2,
-      "winStreak": true,
-      "tieBreakerPoints": null
-    },
-    {
-      "league": "standard",
-      "season": 2025,
-      "team": {
-        "id": 31,
-        "name": "San Antonio Spurs",
-        "nickname": "Spurs",
-        "code": "SAS",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/0/0e/San_Antonio_Spurs_2018.png"
-      },
-      "conference": {
-        "name": "west",
-        "rank": 12,
-        "win": 0,
-        "loss": 0
-      },
-      "division": {
-        "name": "southwest",
-        "rank": 4,
-        "win": 0,
-        "loss": 0,
-        "gamesBehind": "0.5"
-      },
-      "win": {
-        "home": 1,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
-      },
-      "loss": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 0
-      },
-      "gamesBehind": "0.5",
-      "streak": 1,
-      "winStreak": true,
+      "streak": null,
+      "winStreak": false,
       "tieBreakerPoints": null
     },
     {
@@ -1153,49 +1111,7 @@
       },
       "conference": {
         "name": "west",
-        "rank": 3,
-        "win": 0,
-        "loss": 0
-      },
-      "division": {
-        "name": "southwest",
-        "rank": 1,
-        "win": 0,
-        "loss": 0,
-        "gamesBehind": "0.5"
-      },
-      "win": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 1
-      },
-      "loss": {
-        "home": 0,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
-        "lastTen": 0
-      },
-      "gamesBehind": "0.5",
-      "streak": 1,
-      "winStreak": true,
-      "tieBreakerPoints": null
-    },
-    {
-      "league": "standard",
-      "season": 2025,
-      "team": {
-        "id": 14,
-        "name": "Houston Rockets",
-        "nickname": "Rockets",
-        "code": "HOU",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/de/Houston_Rockets_logo_2003.png/330px-Houston_Rockets_logo_2003.png"
-      },
-      "conference": {
-        "name": "west",
-        "rank": 14,
+        "rank": 15,
         "win": 0,
         "loss": 1
       },
@@ -1204,14 +1120,14 @@
         "rank": 5,
         "win": 0,
         "loss": 1,
-        "gamesBehind": "0.5"
+        "gamesBehind": null
       },
       "win": {
-        "home": 1,
+        "home": 0,
         "away": 0,
         "total": 0,
         "percentage": "0.000",
-        "lastTen": 1
+        "lastTen": 0
       },
       "loss": {
         "home": 0,
@@ -1220,9 +1136,51 @@
         "percentage": "1.000",
         "lastTen": 0
       },
-      "gamesBehind": "0.5",
-      "streak": 1,
-      "winStreak": true,
+      "gamesBehind": null,
+      "streak": null,
+      "winStreak": false,
+      "tieBreakerPoints": null
+    },
+    {
+      "league": "standard",
+      "season": 2025,
+      "team": {
+        "id": 31,
+        "name": "San Antonio Spurs",
+        "nickname": "Spurs",
+        "code": "SAS",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/0/0e/San_Antonio_Spurs_2018.png"
+      },
+      "conference": {
+        "name": "west",
+        "rank": 1,
+        "win": 1,
+        "loss": 0
+      },
+      "division": {
+        "name": "southwest",
+        "rank": 1,
+        "win": 1,
+        "loss": 0,
+        "gamesBehind": null
+      },
+      "win": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 0,
+        "percentage": "0.000",
+        "lastTen": 0
+      },
+      "gamesBehind": null,
+      "streak": null,
+      "winStreak": false,
       "tieBreakerPoints": null
     },
     {
@@ -1237,16 +1195,58 @@
       },
       "conference": {
         "name": "west",
-        "rank": 6,
-        "win": 0,
+        "rank": 4,
+        "win": 1,
         "loss": 0
       },
       "division": {
         "name": "southwest",
         "rank": 2,
-        "win": 0,
+        "win": 1,
         "loss": 0,
-        "gamesBehind": "1.5"
+        "gamesBehind": null
+      },
+      "win": {
+        "home": 0,
+        "away": 0,
+        "total": 1,
+        "percentage": "1.000",
+        "lastTen": 0
+      },
+      "loss": {
+        "home": 0,
+        "away": 0,
+        "total": 0,
+        "percentage": "0.000",
+        "lastTen": 0
+      },
+      "gamesBehind": null,
+      "streak": null,
+      "winStreak": false,
+      "tieBreakerPoints": null
+    },
+    {
+      "league": "standard",
+      "season": 2025,
+      "team": {
+        "id": 14,
+        "name": "Houston Rockets",
+        "nickname": "Rockets",
+        "code": "HOU",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/de/Houston_Rockets_logo_2003.png/330px-Houston_Rockets_logo_2003.png"
+      },
+      "conference": {
+        "name": "west",
+        "rank": 9,
+        "win": 0,
+        "loss": 1
+      },
+      "division": {
+        "name": "southwest",
+        "rank": 3,
+        "win": 0,
+        "loss": 1,
+        "gamesBehind": "0.5"
       },
       "win": {
         "home": 0,
@@ -1256,17 +1256,17 @@
         "lastTen": 0
       },
       "loss": {
-        "home": 1,
-        "away": 0,
-        "total": 0,
-        "percentage": "0.000",
+        "home": 0,
+        "away": 1,
+        "total": 1,
+        "percentage": "1.000",
         "lastTen": 1
       },
-      "gamesBehind": "1.5",
+      "gamesBehind": "0.5",
       "streak": 1,
       "winStreak": false,
       "tieBreakerPoints": null
     }
   ],
-  "lastUpdate": "22-10-2025 09:00:00"
+  "lastUpdate": "23-10-2025 09:00:00"
 }
