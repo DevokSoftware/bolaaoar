@@ -65,10 +65,10 @@ export const Homepage: React.FC = () => {
   React.useEffect(() => {
     // fetch("http://localhost:3001/standings")
     // GET INFO FROM BACKEND
-    // fetch("https://bolaaoar.onrender.com/standings")
-    //   .then((response) => response.json())
-    //   .then((data) => mapTeams(data));
-    mapTeams(standings);
+    fetch("https://bolaaoar.onrender.com/standings")
+      .then((response) => response.json())
+      .then((data) => mapTeams(data));
+    //mapTeams(standings); -when using the local file and not the backend info
   }, []);
 
   return (
