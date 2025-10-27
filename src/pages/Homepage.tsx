@@ -63,11 +63,16 @@ export const Homepage: React.FC = () => {
   }
 
   React.useEffect(() => {
+    setLoading(true);
     // fetch("http://localhost:3001/standings")
     // GET INFO FROM BACKEND
     fetch("https://bolaaoar.onrender.com/standings")
       .then((response) => response.json())
-      .then((data) => mapTeams(data));
+      .then((data) => mapTeams(data))
+      .catch((error) => {
+        console.error("Error fetching standings:", error);
+        setLoading(false);
+      });
     //mapTeams(standings); -when using the local file and not the backend info
   }, []);
 
@@ -105,9 +110,36 @@ export const Homepage: React.FC = () => {
           </TabPanels>
         </Tabs>
       ) : (
-        <Box position="relative" h="100vh">
+        <Box 
+          position="relative" 
+          h="100vh" 
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          bg="gray.900"
+        >
           <AbsoluteCenter>
-            <Spinner size="xl" />
+            <Box textAlign="center">
+              <Spinner
+                thickness="5px"
+                speed="0.75s"
+                emptyColor="orange.900"
+                color="orange.400"
+                size="xl"
+                width="100px"
+                height="100px"
+              />
+              <Text 
+                mt={8} 
+                fontSize="xl" 
+                fontWeight="bold" 
+                color="orange.400"
+                letterSpacing="wide"
+              >
+                Loading NBA Standings...
+              </Text>
+            </Box>
           </AbsoluteCenter>
         </Box>
       )}
