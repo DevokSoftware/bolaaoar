@@ -2,13 +2,7 @@ import * as React from "react";
 import { Box, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { PredictionPick, SeasonPrediction } from "../data/predictions";
 import { PersonEnum } from "../model/PersonEnum";
-
-const participantColours: Record<PersonEnum, string> = {
-  [PersonEnum.UNKNOWN]: "#A0AEC0",
-  [PersonEnum.JD]: "#63B3ED",
-  [PersonEnum.RBR]: "#F6AD55",
-  [PersonEnum.LN]: "#B794F4",
-};
+import { participantColours } from "../data/participants";
 
 function Portrait({ pick, colour }: { pick: PredictionPick; colour: string }) {
   const [imageFailed, setImageFailed] = React.useState(false);
