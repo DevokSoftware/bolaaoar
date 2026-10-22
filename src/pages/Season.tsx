@@ -14,6 +14,7 @@ import {
 
 import { ITeam } from "../model/Team";
 import { SeasonPrediction } from "../data/predictions";
+import Predictions from "../components/Predictions";
 import { PersonEnum } from "../model/PersonEnum";
 import { ConferenceEnum } from "../model/ConferenceEnum";
 import { IPersonScore } from "../model/PersonScore";
@@ -210,40 +211,7 @@ export const Season: React.FC<SeasonProps> = ({
           </TableContainer>
         </Box>
       </SimpleGrid>
-      {predictions.length > 0 && (
-        <Box mt={10}>
-          <Text as="h2" textAlign="center" fontSize="2xl" fontWeight="bold" color="gray.300">
-            PREDICTIONS
-          </Text>
-          <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} spacing={6} mt={6}>
-            {predictions.map((category) => (
-              <Box key={category.title}>
-                <Text as="h3" textAlign="center" fontWeight="bold" color="gray.300" mb={3}>
-                  {category.title}
-                </Text>
-                <TableContainer whiteSpace="normal">
-                  <Table size="sm" aria-label={category.title}>
-                    <Thead>
-                      <Tr>
-                        <Th color="gray.400">Person</Th>
-                        <Th color="gray.400">Prediction</Th>
-                      </Tr>
-                    </Thead>
-                    <Tbody>
-                      {category.picks.map(({ person, prediction }) => (
-                        <Tr key={person} backgroundColor={rowToHover === person ? "blue.800" : ""}>
-                          <Td color="gray.400">{person}</Td>
-                          <Td color="gray.300">{prediction}</Td>
-                        </Tr>
-                      ))}
-                    </Tbody>
-                  </Table>
-                </TableContainer>
-              </Box>
-            ))}
-          </SimpleGrid>
-        </Box>
-      )}
+      <Predictions predictions={predictions} highlightedPerson={rowToHover} />
       <SimpleGrid minChildWidth="120px" spacing="60px" mt="4vh">
         {standingsMessage && (
           <Text role="status" color="gray.400" fontSize="xs" textAlign="center">

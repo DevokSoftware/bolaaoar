@@ -58,8 +58,8 @@ test("shows award predictions and each person's corrected Finals pick", async ()
   const panel = screen.getByRole("tabpanel");
   expect(within(panel).getByText("Caleb Wilson")).toBeInTheDocument();
   expect(within(panel).getByText("Luka Dončić")).toBeInTheDocument();
-  const raptors = within(panel).getByText("Thunder vs Raptors").closest("tr")!;
+  const raptors = within(panel).getByText("Thunder vs Raptors").closest("li")!;
   expect(within(raptors).getByText("Lucas Niven")).toBeInTheDocument();
-  const sixers = within(panel).getByText("Thunder vs 76ers").closest("tr")!;
+  const sixers = within(panel).getByText("Thunder vs 76ers").closest("li")!;
   expect(within(sixers).getByText("João Dinis")).toBeInTheDocument();
 });
