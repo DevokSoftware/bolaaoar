@@ -3,14 +3,6 @@ import {
   ChakraProvider,
   Box,
   Text,
-  SimpleGrid,
-  TableContainer,
-  Table,
-  Thead,
-  Tr,
-  Th,
-  Tbody,
-  Td,
   Spinner,
   AbsoluteCenter,
   Tabs,
@@ -20,7 +12,7 @@ import {
   TabPanel,
 } from "@chakra-ui/react";
 
-import { ITeam, Team } from "../model/Team";
+import { ITeam } from "../model/Team";
 import theme from "../theme";
 import Season from "./Season";
 import {
@@ -28,60 +20,68 @@ import {
   getPicksFromSeason2324,
   getPicksFromSeason2425,
   getPicksFromSeason2526,
+  getPicksFromSeason2627,
 } from "../data/picks";
-import standings from "../data/standings.json";
+import { predictions2627 } from "../data/predictions";
+
+const currentSeasonYear = 2026;
+
+interface StandingsResponse {
+  response: {
+    season: number | string;
+    team: { id: number };
+    win: { total: number };
+  }[];
+  lastUpdate: string;
+}
 
 export const Homepage: React.FC = () => {
   const [currentSeasonLastUpdate, setCurrentSeasonLastUpdate] =
     React.useState<string>("");
   const [loading, setLoading] = React.useState<boolean>(false);
+  const [standingsMessage, setStandingsMessage] = React.useState(
+    "Waiting for 26/27 standings."
+  );
   const [currentSeasonPicks, setCurrentYearPicks] = React.useState<ITeam[]>(
-    getPicksFromSeason2526()
+    getPicksFromSeason2627()
   );
   const picks_22_23 = getPicksFromSeason2223();
   const picks_23_24 = getPicksFromSeason2324();
   const picks_24_25 = getPicksFromSeason2425();
-
-  function mapTeams(scoreboardResponse: any) {
-    setCurrentYearPicks((prevPicks) => {
-      const updatedPicks = prevPicks.map((team) => {
-        const foundTeam = scoreboardResponse.response.find(
-          (s: any) => s.team.id == team.id
-        );
-        if (foundTeam) {
-          return { ...team, wins: foundTeam.win.total };
-        }
-        return team;
-      });
-
-      setCurrentSeasonLastUpdate(scoreboardResponse.lastUpdate);
-      setLoading(false);
- 
-      console.log(scoreboardResponse);
-      return updatedPicks;
-    });
-  }
+  const picks_25_26 = getPicksFromSeason2526();
 
   React.useEffect(() => {
     setLoading(true);
-    // fetch("http://localhost:3001/standings")
-    // GET INFO FROM BACKEND
-    fetch("https://bolaaoar.onrender.com/standings")
-      .then((response) => response.json())
-      .then((data) => mapTeams(data))
+    fetch(`https://bolaaoar.onrender.com/standings?season=${currentSeasonYear}`)
+      .then((response) => {
+        if (!response.ok) throw new Error("Unable to fetch standings");
+        return response.json();
+      })
+      .then((data: StandingsResponse) => {
+        const seasonStandings = data.response.filter(
+          (entry) => Number(entry.season) === currentSeasonYear
+        );
+        if (seasonStandings.length === 0) return;
+        setCurrentYearPicks((previousPicks) => previousPicks.map((team) => {
+          const standing = seasonStandings.find((entry) => Number(entry.team.id) === team.id);
+          return standing ? { ...team, wins: standing.win.total } : team;
+        }));
+        setCurrentSeasonLastUpdate(data.lastUpdate);
+        setStandingsMessage("");
+      })
       .catch((error) => {
         console.error("Error fetching standings:", error);
-        setLoading(false);
-      });
-    //mapTeams(standings); -when using the local file and not the backend info
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   return (
     <ChakraProvider theme={theme}>
       {!loading ? (
         <Tabs>
-          <TabList>
-           <Tab>Season 25/26</Tab>
+          <TabList overflowX="auto">
+            <Tab flexShrink={0}>Season 26/27</Tab>
+            <Tab flexShrink={0}>Season 25/26</Tab>
             <Tab>Season 24/25</Tab>
             <Tab>Season 23/24</Tab>
             <Tab>Season 22/23</Tab>
@@ -89,11 +89,17 @@ export const Homepage: React.FC = () => {
 
           <TabPanels>
             <TabPanel>
-              {/* Season 25/26*/}
+              {/* Season 26/27*/}
               <Season
                 picks={currentSeasonPicks}
                 lastUpdate={currentSeasonLastUpdate}
+                predictions={predictions2627}
+                standingsMessage={standingsMessage}
               />
+            </TabPanel>
+            <TabPanel>
+              {/* Season 25/26*/}
+              <Season picks={picks_25_26} lastUpdate={null} />
             </TabPanel>
             <TabPanel>
               {/* Season 24/25*/}
